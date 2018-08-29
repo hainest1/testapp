@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class LinksTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class LinksTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Link::class, 5)->create();
+        factory(App\User::class, 5)->create();
     }
 }

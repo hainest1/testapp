@@ -85,7 +85,13 @@
                 <div class="links">
                     <a href="{{ url('/') }}">Home</a>
                     <a href="{{ url('/about') }}">About</a>
-                    <a href="https://laravel.com/docs">Laravel Documentation</a>
+                    <a href="https://laravel.com/docs">Laravel Documentation</a><br>
+                    <b>Submitted Links:</b><br><br>
+                    @foreach ($links as $link)
+                        <a href="{{ $link->url }}">{{ $link->title }}</a><br>
+                    @endforeach
+                    <br>
+                    <a href="{{ url('/submit') }}">Add a link</a>
                 </div>
             </div>
         </div>
